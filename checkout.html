@@ -44,6 +44,183 @@
             </div>
         </nav>
     </header>
+    <section id="checkout" class="page">
+        <div class="page-container">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Checkout</h2>
+                    <p>Complete your purchase</p>
+                </div>
+                
+                <div class="checkout-container">
+                    <div class="checkout-form">
+                        <form>
+                            <div class="form-section">
+                                <h3>Shipping Information</h3>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="first-name">First Name</label>
+                                        <input type="text" id="first-name" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="last-name">Last Name</label>
+                                        <input type="text" id="last-name" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <input type="text" id="address" class="form-control" required>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="city">City</label>
+                                        <input type="text" id="city" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="state">State</label>
+                                        <input type="text" id="state" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="zip">ZIP Code</label>
+                                        <input type="text" id="zip" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="country">Country</label>
+                                    <select id="country" class="form-control" required>
+                                        <option value="">Select Country</option>
+                                        <option value="pk">Pakistan</option>
+                                        <option value="us">United States</option>
+                                        <option value="ca">Canada</option>
+                                        <option value="uk">United Kingdom</option>
+                                        <option value="au">Australia</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-section">
+                                <h3>Billing Information</h3>
+                                <div class="form-group">
+                                    <div class="remember-me">
+                                        <input type="checkbox" id="same-as-shipping" checked>
+                                        <label for="same-as-shipping">Same as shipping address</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-section">
+                                <h3>Payment Method</h3>
+                                <div class="payment-methods">
+                                    <div class="payment-method">
+                                        <input type="radio" name="payment" id="credit-card" checked>
+                                        <div class="payment-icon">
+                                            <i class="bi bi-credit-card"></i>
+                                        </div>
+                                        <div>
+                                            <label for="credit-card">Card</label>
+                                        </div>
+                                    </div>
+                                    <div class="payment-method">
+                                        <input type="radio" name="payment" id="deliv">
+                                        <div class="payment-icon">
+                                            <i class="bi bi-truck"></i>
+                                        </div>
+                                        <div>
+                                            <label for="deliv">Cash On Delivery</label>
+                                        </div>
+                                    </div>
+                                    <div class="payment-method">
+                                        <input type="radio" name="payment" id="apple-pay">
+                                        <div class="payment-icon">
+                                            <i class="bi bi-apple"></i>
+                                        </div>
+                                        <div>
+                                            <label for="apple-pay">Apple Pay</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="card-number">Card Number</label>
+                                        <input type="text" id="card-number" class="form-control" placeholder="1234 5678 9012 3456">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="expiry-date">Expiry Date</label>
+                                        <input type="text" id="expiry-date" class="form-control" placeholder="MM/YY">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" class="form-control" placeholder="123">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="card-name">Name on Card</label>
+                                    <input type="text" id="card-name" class="form-control">
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Place Order</button>
+                        </form>
+                    </div>
+                    
+                    <div class="order-summary">
+                        <div class="cart-summary">
+                            <h3>Order Summary</h3>
+                            <div class="summary-item">
+                                <span>Subtotal</span>
+                                <span>$1,479.97</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Shipping</span>
+                                <span>Free</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Tax</span>
+                                <span>$118.40</span>
+                            </div>
+                            <div class="summary-item summary-total">
+                                <span>Total</span>
+                                <span>$1,598.37</span>
+                            </div>
+                            
+                            <div class="cart-items">
+                                <div class="cart-item">
+                                    <div class="cart-item-image">
+                                        <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="NVIDIA GeForce RTX 3080">
+                                    </div>
+                                    <div class="cart-item-details">
+                                        <h3 class="cart-item-name">NVIDIA GeForce RTX 3080</h3>
+                                        <div class="cart-item-price">$799.99</div>
+                                        <div class="cart-item-actions">
+                                            <div class="quantity-value">Qty: 1</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="cart-item">
+                                    <div class="cart-item-image">
+                                        <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="AMD Ryzen 9 5900X">
+                                    </div>
+                                    <div class="cart-item-details">
+                                        <h3 class="cart-item-name">AMD Ryzen 9 5900X</h3>
+                                        <div class="cart-item-price">$549.99</div>
+                                        <div class="cart-item-actions">
+                                            <div class="quantity-value">Qty: 1</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="container">
             <div class="footer-content">
