@@ -10,7 +10,7 @@
     
     document.querySelectorAll('.quantity-btn.plus').forEach(btn => {
         btn.addEventListener('click', function() {
-            console.log("adding item")
+            alert("item added")
             updateQuantity(this, 1);
         });
     });

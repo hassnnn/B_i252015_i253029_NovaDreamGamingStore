@@ -13,8 +13,12 @@
     
     productCards.forEach(card =>{
         card.addEventListener('click', function(e) {
+            
             if(!e.target.classList.contains("btn")){
             window.location.href = './product-details.html';
+            }
+            else{
+                console.log("didnot press item, pressed btn")
             }
         });
     })
