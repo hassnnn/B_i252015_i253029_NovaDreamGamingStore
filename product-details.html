@@ -5,8 +5,260 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaDream - Product Details</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./bootstrap-icons-1.13.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="./bootstrap-icons-1.13.1/bootstrap-icons.min.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./Images/LOGO.png" alt="NovaDream" width="80px">
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <i class="bi bi-list"></i>
+            </div>
+            <ul>
+                <li><a href="./index.html" class="nav-link">Home</a></li>
+                <li><a href="./products.html" class="nav-link">Products</a></li>
+                <li><a href="./abous-us.html" class="nav-link">About</a></li>
+                <li><a href="./contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="search-bar">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Search products...">
+            </div>
+            
+            <div class="nav-icons">
+                <a href="./account.html" class="nav-icon">
+                    <i class="bi bi-person"></i>
+                </a>
+                <a href="./wishlist.html" class="nav-icon">
+                    <i class="bi bi-heart"></i>
+                </a>
+                <a href="./cart.html" class="nav-icon">
+                    <i class="bi bi-cart"></i>
+                    <span class="cart-count">3</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Product Detail Page -->
+    <section id="product-detail" class="page">
+        <div class="page-container">
+            <div class="container">
+                <div class="product-detail">
+                    <div class="product-gallery">
+                        <div class="main-image">
+                            <img src="./Images/gpu.jpg" alt="NVIDIA GeForce RTX 3080">
+                        </div>
+                        <div class="thumbnail-gallery">
+                            <div class="thumbnail active">
+                                <img src="./Images/gpu.jpg" alt="Thumbnail 1">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="./Images/gpu2.jpg" alt="Thumbnail 2">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="./Images/gpu3.jpg" alt="Thumbnail 3">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="./Images/gpu4.jpg" alt="Thumbnail 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info-detail">
+                        <h1>NVIDIA GeForce RTX 3080</h1>
+                        <div class="product-rating-detail">
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(96 reviews)</span>
+                            </div>
+                            <a href="#">Write a review</a>
+                        </div>
+                        <div class="product-price-detail">$799.99</div>
+                        <div class="product-description">
+                            <p>The GeForce RTX™ 3080 is powered by Ampere—NVIDIA's 2nd gen RTX architecture. It features dedicated 2nd gen RT Cores and 3rd gen Tensor Cores, streaming multiprocessors, and a staggering 10 GB of G6X memory to deliver high-quality performance for gamers and creators.</p>
+                        </div>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-name">GPU</span>
+                                <span class="spec-value">NVIDIA GeForce RTX 3080</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Memory</span>
+                                <span class="spec-value">10 GB GDDR6X</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Core Clock</span>
+                                <span class="spec-value">1.44 GHz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Boost Clock</span>
+                                <span class="spec-value">1.71 GHz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Interface</span>
+                                <span class="spec-value">PCI Express 4.0</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Power Connectors</span>
+                                <span class="spec-value">2 x 8-pin</span>
+                            </div>
+                        </div>
+                        <div class="quantity-selector">
+                            <span>Quantity:</span>
+                            <div class="quantity-controls">
+                                <div class="quantity-btn minus">-</div>
+                                <div class="quantity-value">1</div>
+                                <div class="quantity-btn plus">+</div>
+                            </div>
+                        </div>
+                        <div class="product-actions-detail">
+                            <button class="btn btn-primary btn-large">Add to Cart</button>
+                            <button class="btn btn-secondary btn-large"><i class="far fa-heart"></i> Add to Wishlist</button>
+                        </div>
+                        <div class="product-meta">
+                            <p><i class="bi bi-truck"></i> Free shipping on orders over $99</p>
+                            <p><i class="bi bi-shield-alt"></i> 2-year warranty included</p>
+                            <p><i class="bi bi-undo"></i> 30-day return policy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="related-products">
+                    <div class="section-title">
+                        <h2>Related Products</h2>
+                        <p>You might also be interested in these products</p>
+                    </div>
+                    <div class="products-grid">
+                        <!-- Related product cards -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="./Images/Corsair-K57-RGB-WIRELESS-Gaming-Keyboard_main.jpg.webp"
+                                alt="Gaming Keyboard">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Keyboard</div>
+                                <h3 class="product-name">Corsair K57</h3>
+                                <div class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <span>(128)</span>
+                                </div>
+                                <div class="product-subinfo">mechanical</div>
+                                <div class="product-price">$54.99</div>
+                                <button class="btn btn-primary">Add to Cart</button>
+                                
+                            </div>
+                        </div>
+						<div class="product-card">
+                            <div class="product-image">
+                                <img src="./Images/rbtech_xpg_valor_air_plus_black.png"
+                                alt="Gaming Case">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Casing</div>
+                                <h3 class="product-name">RGB Casing</h3>
+                                <div class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <span>(128)</span>
+                                </div>
+                                <div class="product-subinfo">rgb</div>
+                                <div class="product-price">$49.99</div>
+                                <button class="btn btn-primary">Add to Cart</button>
+                                
+                            </div>
+                        </div>
+						<div class="product-card">
+                            <div class="product-image">
+                                <img src="./Images/rbtech_xpg_lancer_blade_rgb_black.png"
+                                alt="Gaming Processor">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Ram</div>
+                                <h3 class="product-name">Corsair Ram</h3>
+                                <div class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <span>(128)</span>
+                                </div>
+                                <div class="product-subinfo">16gb, ddr4</div>
+                                <div class="product-price">$69.99</div>
+                                <button class="btn btn-primary">Add to Cart</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <img src="./Images/LOGO.png" width="50" alt="">
+                    <p>Your one-stop shop for high-performance gaming components and accessories.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="./index.html" class="nav-link">Home</a></li>
+                        <li><a href="./products.html" class="nav-link">Products</a></li>
+                        <li><a href="./abous-us.html" class="nav-link">About Us</a></li>
+                        <li><a href="./contact-us.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-pin-map-fill"></i> Fast University, Islamabad</li>
+                        <li><i class="bi bi-telephone-fill"></i> +923000000000</li>
+                        <li><i class="bi bi-envelope"></i> support@novadream.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 NovaDream. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
+<script src="./JS/script.js"></script>
+<script src="./JS/product-details.js"></script>
 </html>
