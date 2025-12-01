@@ -5,24 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaDream - Homepage</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./bootstrap-icons-1.13.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="./bootstrap-icons-1.13.1/bootstrap-icons.min.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <nav>
-            <img src="" alt="NovaDream" id="logo">
-            <ul class="nav_items">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about-us.html">About</a></li>
-                <li><a href="/products.html">Products</a></li>
-                <li><a href="/index.html">Contact</a></li>
-            </ul>
-            <input type="search" name="product-search" id="product-search">
-            <ul class="nav_items">
-                <li><a href="/index.html"><img src="" alt="Login" ></a></li>
-                <li><a href="/about-us.html"><img src="" alt="Cart" ></a></li>
-                <li><a href="/products.html"><img src="" alt="Wishlist" ></a></li>
-            </ul>
-        </nav>
+                <div class="logo">
+                    <img src="./Images/LOGO.png" alt="NovaDream" width="80px">
+                </div>
+                
+                <div class="mobile-menu-btn">
+                    <i class="bi bi-list"></i>
+                </div>
+                <ul>
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Products</a></li>
+                    <li><a href="#" class="nav-link">About</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="search-bar">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search products...">
+                </div>
+                
+                <div class="nav-icons">
+                    <div class="nav-icon">
+                        <i class="bi bi-person"></i>
+                    </div>
+                    <div class="nav-icon">
+                        <i class="bi bi-heart"></i>
+                    </div>
+                    <div class="nav-icon">
+                        <i class="bi bi-cart"></i>
+                        <span class="cart-count">3</span>
+                    </div>
+                </div>
+            </nav>
     </header>
+    
 </body>
 </html>
