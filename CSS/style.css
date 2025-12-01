@@ -7,3 +7,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+header{
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.nav_items{
+    display: flex;
+    justify-content: space-around;
+}
+.nav_items li{
+    margin-left: 10px;
+    list-style: none;
+    text-decoration: none;
+}
