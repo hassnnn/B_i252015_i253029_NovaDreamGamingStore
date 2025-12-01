@@ -353,3 +353,53 @@ nav a:hover:after {
     padding: 10px;
     font-size: 0.9rem;
 }
+/* PRODUCTS END  */
+
+/* FEATURES */
+.features{
+    background-image: url(../Images/blackbg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+#features-container{
+    /* margin-top: 150px; */
+}
+.features-content h1{
+    font-size: 50px;
+}
+.features-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.feature-cards{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.feature-card{
+    max-width: 300px;
+}
+.feature-title{
+    margin-bottom: 10px;
+}
+.feature-num{
+    color: var(--gray);
+}
+.benefit-icon{
+    fill: var(--primary);
+    color: var(--primary);
+    font-size: 80px;
+}
+.benefit{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.benefits{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
